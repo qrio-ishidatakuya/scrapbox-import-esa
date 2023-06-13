@@ -1,0 +1,15 @@
+{
+  "name": "scrapbox-import-esa",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/qrio-ishidatakuya/scrapbox-import-esa.git",
+  "author": "qrio-ishidatakuya <takuya.ishida@qrioinc.com>",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "parse": "node parse.js"
+  },
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}
