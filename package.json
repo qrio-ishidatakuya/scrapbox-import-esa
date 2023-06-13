@@ -1,15 +1,28 @@
 {
-  "name": "scrapbox-import-esa",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/qrio-ishidatakuya/scrapbox-import-esa.git",
-  "author": "qrio-ishidatakuya <takuya.ishida@qrioinc.com>",
-  "license": "MIT",
-  "type": "module",
+  "name": "typescript-node-base",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/index.js",
   "scripts": {
-    "parse": "node parse.js"
+    "dev": "ts-node src/index.ts",
+    "dev:watch": "ts-node-dev --respawn src/index.ts",
+    "clean": "rimraf dist/*",
+    "tsc": "tsc",
+    "build": "npm-run-all clean tsc",
+    "start": "node ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^12.12.54",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2",
+    "ts-node": "^8.10.2",
+    "ts-node-dev": "^1.0.0-pre.56",
+    "typescript": "^3.9.7"
   },
   "dependencies": {
-    "request": "^2.88.2"
+    "axios": "^1.4.0"
   }
 }
