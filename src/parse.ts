@@ -7,4 +7,4 @@ const pages = jsonObject.pages;
 //     result[obj.id] = obj;
 // });
 
-writeFileSync('./data/output.json', JSON.stringify(pages));
+writeFileSync('./data/parse.json', JSON.stringify(pages));
