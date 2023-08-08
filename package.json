@@ -11,6 +11,8 @@
     "build": "npm-run-all clean tsc",
     "start": "node .",
     "request": "ts-node --require dotenv/config src/request.ts",
+    "parse": "ts-node --require dotenv/config src/parse.ts",
+    "post": "ts-node --require dotenv/config src/post.ts",
     "format": "prettier --write './**/{*.js,*.ts,*.html,*.css,*.json}'"
   },
   "keywords": [],
